@@ -6,7 +6,12 @@ const htmlFiles = fs.readdirSync(htmlDir).filter(item => {
     return item.match(/.+\.html$/)
 })
 
-const dom = new JSDOM('<body><ul class="list-index"></ul></body>')
+const dom = new JSDOM(`
+    <body>
+        <ul class="list-index"></ul>
+    </body>
+`)
+
 const document = dom.window.document
 const listIndex = document.querySelector('.list-index')
 
