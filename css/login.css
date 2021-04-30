@@ -1,0 +1,198 @@
+@charset 'utf-8';
+
+/* common */
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 100;
+  src: 
+       url(fonts/NotoSansCJKkr-Thin.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: 
+       url(fonts/NotoSansCJKkr-Regular.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  src: 
+       url(fonts/NotoSansCJKkr-Medium.otf) format('opentype');
+}
+
+
+html {-webkit-font-smoothing: antialiased;}
+html,body {color: #333; width:100%;height:100%; background-color:#ffffff; position:relative; margin: 0; padding: 0; border: 0; font-family:'Noto Sans KR','맑은 고딕', '돋움', 'Tahoma',sans-serif; vertical-align:baseline;font-size:13px;}
+div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0; padding: 0; border: 0; font-family:'Noto Sans KR','맑은 고딕', '돋움', 'Tahoma',sans-serif; vertical-align:baseline;font-size:12px;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block;}
+select::-ms-expand{display:none;}
+blockquote, q { quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none;}
+table { border-collapse: separate ; border-spacing: 0;}
+img {border:0 none;vertical-align:top;}
+select, input, img, li {vertical-align:middle;text-align:left;}
+ul,li,ol {list-style:none;}
+legend, caption, summary {display:none;}
+select {-webkit-appearance:none; -moz-appearance:none; -o-appearance:none; appearance:none;}
+
+li {float:left;list-style:none;}
+a {color:#333; text-decoration:none}
+a:link {color:#333; text-decoration:none} 
+a:visited {color:#333; text-decoration:none} 
+a:active { color:#333; text-decoration:none} 
+a:hover {color:#333; text-decoration:none}	
+		
+input {background:#ffffff; border:1px solid #DBDBDB; padding:6px 5px 4px;  box-sizing:border-box;}
+input[type='button'] {outline: none;}
+
+input[type=checkbox]:before { content:""; display:inline-block; background: #fff; width:20px; height:20px; margin-top: -6px; border: 1px solid #ccc; }
+input[type=checkbox]:checked:before,
+.loginBox-setting input[type="checkbox"]:checked + label:before {background: #0086D7 url(check_w.png) center center no-repeat; }	
+
+input[type=checkbox] + label,
+.loginBox-setting label:before { margin-left: 12px;}	
+input[type=checkbox]:hover +label {color:#0086D7}
+	
+/* input box color */ 
+input:-webkit-autofill {-webkit-box-shadow: 0 0 0 30px #f5f5f5 inset; } 
+input:-webkit-autofill, 
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {transition: background-color 5000s ease-in-out 0s; }
+
+
+.flt_lt {float:left;}
+.flt_rt {float:right; text-align: right;}	
+	
+/* 로그인 */
+.login_id {background-size: 15px; background-image:url(login_id.png) !important;background-color: #f5f5f5 !important; text-indent:35px; background-repeat: no-repeat; background-position: 10px center;border:0 !important;}	
+.login_un {background-size: 15px; background-image:url(login_un.png) !important;background-color: #f5f5f5 !important; text-indent:35px; background-repeat: no-repeat; background-position: 10px center;border:0 !important;}	
+.login_pw {background-size: 15px; background-image:url(login_pw.png) !important;background-color: #f5f5f5 !important; text-indent:35px; background-repeat: no-repeat; background-position: 10px center;border:0 !important;}	
+	
+
+.container {
+    position: relative;
+    min-height: 100%;
+    background-color: #ecedef;
+}
+.Container-inner {
+    box-sizing: border-box;
+    width: 1200px;
+    padding: 104px 0px 0px;
+    margin: 0 auto;
+}
+
+.Container-inner:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.login {
+    height: 100%;
+}
+
+.login .Container-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100% !important;
+    padding: 0;
+}
+
+.loginBox {
+    position: relative;
+    box-sizing: border-box;
+    width: 750px;height: 520px;
+    padding-top: 50px;
+    background-color: #fff;
+	box-shadow:3px 3px 10px rgba(0, 0, 0, 0.07);
+	border-radius: 8px;
+}
+
+.loginBox:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.loginBox-wrap {
+    width: 400px;
+	margin: 0 auto;
+    padding: 30px 10px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+  
+.loginBox-con {
+    float: left;
+	}	
+	
+.loginBox-form {width: 100%; margin:0px auto;
+}
+.loginBox-form .logo-img {width: 190px;}
+
+.loginBox h2 {
+    text-align:center;
+	font-size: 40px;color:#284365;font-weight:500;
+}
+.loginBox h4 {text-align:center;letter-spacing: 0.8px;font-weight:400;
+    margin-bottom: 10px;
+	font-size: 13px; color:#284365
+}
+.loginBox-form .has-message-input {
+    display: block; padding-top: 5px;
+}
+
+.loginBox-form input {
+    margin-top: 8px; height: 36px; width:100%;
+}
+
+.loginBox-form .loginBox-submit {
+    width: 100%; border-radius: 2px;
+	font-size:15px;font-weight: bold;
+    height: 45px;
+    line-height: 42px;
+    margin-top: 12px;
+	background: #0068dc; color:#fff;border: 0;
+    outline: none;
+}
+.loginBox-form .loginBox-submit:hover {background: #0052AD}
+		
+.loginBox-setting {width: 100%; margin:0 auto;
+    margin-top: 13px;display: block;
+}
+
+.loginBox-setting label {
+    color: #666666;
+}
+	
+.loginBox-setting select {
+    width: 100px;vertical-align: top;
+    height:20px;
+    padding: 0px;
+    font-size: 12px;
+    color: #006fff;
+    border: 0px solid #006fff;
+    border-bottom: 1px solid #006fff;
+	border-radius: 0;
+    -webkit-appearance: none; 
+   -moz-appearance: none;    
+   appearance: none;
+   background: url('../img/select-down.png') no-repeat 100% 50%; 
+}
+.loginBox-setting select::-ms-expand { display: none;}
+
+.option{margin: 20px auto;text-align: center;border-top: 1px dashed #ddd;}
+.option a{padding: 10px 20px 10px 0px;margin:20px 10px;border-radius: 3px;display: inline-block;border-right: 1px solid #e3e3e3;}
+.option a:last-child{border-right: 0;}
+
+.footer {font-size: 12px; border-radius: 0 0 8px 8px; text-align: center;position: absolute;bottom: 0; overflow: hidden; background:#f3f4f6;color: #666666; line-height: 12px;padding: 14px 20px; width:100%; height:40px; box-sizing: border-box;}
+
+
+

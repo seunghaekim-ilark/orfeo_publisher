@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko" >
+
+<head>
+    <meta charset="utf-8">
+    <title>ORFEO</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta name="viewport" content="width=1190">-->
+    <meta name="robots" content="index,nofollow">
+    <meta name="description" content="음악 콘텐츠 전문 상영관 오르페오">
+    <meta property="og:title" content="ORFEO">
+    <meta property="og:url" content="#">
+    <meta property="og:description" content="음악 콘텐츠 전문 상영관 오르페오">
+    
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    
+<div class="wrap" style="background-color:rgba(0,0,0,0.75); width:100vw; height:100vh">
+    <div class="popup">
+        <div class="title"> 결제내역 확인</div>
+		<a href="#" class="btnClose">팝업 닫기</a>
+
+        <ul class="payment">
+            <li>
+                <dl class="movie">
+                    <dt>상영관</dt>
+                    <dd>한남(서울)</dd>
+                    <dt>상영작</dt>
+                    <dd>영화 제목</dd>
+                    <dt>상영시간</dt>
+                    <dd>2020년 0월 0일(금) 00:00~00:30</dd>
+                    <dt>좌석</dt>
+                    <dd>C1, C2</dd>
+                </dl>
+            </li>
+            <li>
+                <dl class="discount">
+                    <dt>프로모션 할인</dt>
+                    <dd>
+                        <select name="promotion" id="">
+                            <option value="">선택</option>
+							<option value="">오픈 기념 프로모션</option>
+							<option value="">적용하지 않음</option>
+                        </select>
+                    </dd>
+                    <dt>내가 보유한 쿠폰</dt>
+                    <dd>
+                        <select name="promotion" id="">
+                            <option value="">선택</option>
+							<option value="">50% 할인권(동반 1인)</option>
+							<option value="">없음</option>
+                        </select>
+                    </dd>
+                    <dt>쿠폰 번호</dt>
+                    <dd>
+                        <input type="text">
+                        <button class="sBtn">적용</button>
+                    </dd>
+                </dl>
+                <div class="sum">
+                    <dl>
+                        <dt>구매(예매) 가격</dt>
+                        <dd>100,000원 (성인2명 / 50,000원)</dd>
+                        <dt>할인 금액</dt>
+                        <dd>-20,000원</dd>
+                        <dt class="indent">블랙 멤버십 동반 10%</dt>
+                        <dd class="indentprice">10,000원</dd>
+                        <dt class="indent">프로모션(오픈기념) 10%</dt>
+                        <dd class="indentprice">10,000원</dd>
+                        <dt class="total">결제 금액</dt>
+                        <dd class="total">80,000원</dd>
+                    </dl>
+                </div>
+            </li>
+            <li class="payType">
+                <input type="radio" id="rd1" name="paytype"><label for="rd1">신용카드</label>
+                <input type="radio" id="rd2" name="paytype"><label for="rd2">간편결제</label>
+                <input type="radio" id="rd3" name="paytype"><label for="rd3">가상 계좌이체</label>
+            </li>
+		</ul>
+		<div class="terms">
+			<h2 class="titType1">이용 약관 <a href="#">자세히보기</a></h2>
+			<div class="allChk">
+				<input type="checkbox" id="cb1" name=""><label for="cb1">전체동의</label>
+			</div>
+			<div class="eaChk">
+				<span><input type="checkbox" id="cb2" name=""><label for="cb2">[필수] 전자 금융거래 이용약관</label></span>
+				<span><input type="checkbox" id="cb3" name=""><label for="cb3">[필수] 개인정보 수집 이용약관</label></span>
+				<span><input type="checkbox" id="cb4" name=""><label for="cb4">[필수] 개인정보 제공 및 위탁 안내 약관</label></span>
+			</div>
+		</div>
+		<div class="lastbtn">
+			<button class="cancel">취소</button>
+			<button class="pay">결제</button>
+		</div>
+        
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/common.js"></script>	
+  
+</body>
+</html>

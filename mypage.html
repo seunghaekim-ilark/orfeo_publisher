@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko" >
+
+<head>
+    <meta charset="utf-8">
+    <title>ORFEO</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta name="viewport" content="width=1190">-->
+    <meta name="robots" content="index,nofollow">
+    <meta name="description" content="음악 콘텐츠 전문 상영관 오르페오">
+    <meta property="og:title" content="ORFEO">
+    <meta property="og:url" content="#">
+    <meta property="og:description" content="음악 콘텐츠 전문 상영관 오르페오">
+    
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+<div class="wrap">
+   
+    <header>
+        <div class="header_wrap">
+        <a href="#" class="logo">
+            <h1>ORFEO</h1>
+        </a>
+        <ul class="utility">
+            <li><a href="#">로그인/회원가입</a></li>
+            <li><a href="#">마이페이지</a></li>
+            <li><a href="#">사이트맵</a></li>
+        </ul>
+        </div>
+        <ul class="gnb">
+            <li><a href="#">오르페오</a></li>
+            <li class="sub"><a href="#">프로그램</a>
+                <ul class="submenu">
+                    <li><a href="#">상영작</a></li>
+                    <li><a href="#">상영예정작</a></li>
+                </ul>
+            </li>
+            <li><a href="#">예매</a></li>
+            <li><a href="#">극장</a></li>
+            <li><a href="#">대관</a></li>
+            <li><a href="#">큐레이션</a></li>
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#">혜택</a></li>
+        </ul>
+        <div class="subbg"></div>
+    </header>
+    
+    <nav class="breadcrumb">
+        <ol>
+            <li><a href="#"><span class="home">Home</span></a><span class="arrow_r"></span></li>
+            <li><a href="#">MY OREFEO</a></li>
+        </ol>
+    </nav>
+    
+   <div id="container">
+        <div class="mypageBox">
+            <div class="leftCon">
+                <div class="myInfo">
+                    <strong>홍길동</strong> 님<br>
+                    GRAY 회원
+                    <div class="time">
+                        마지막 접속일<br>
+                        20.01.01 17:00:00
+                    </div>
+                </div>
+                <ul>
+                    <li><a href="#">MY</a></li>
+                    <li class="on"><a href="#">멤버십</a></li><!-- 메뉴 선택시 효과 class=on 추가-->
+                    <li><a href="#">개인정보 수정</a></li>
+                </ul>
+            </div>
+
+            <div class="rightCon">
+            <div class="titArea">
+                <ul>
+                    <li>
+                        <label for="toggle_button" class="tglTitle_button">예매 내역<span class="listSum">1건</span></label>
+                        <input type="checkbox" id="toggle_button">
+                        <div id="toggle_contents">
+                            <table class="listTable">
+                                <thead>
+                                    <tr><th>No</th><th>예매일시</th><th>프로그램명</th><th>상영시간</th><th>극 장</th><th>좌석번호</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>2</td><td>2020.00.00 12:00:00</td><td>영화제목</td><td>2020.00.00 12:00:00</td><td>한남(서울)</td><td>D2, D3</td></tr>
+                                    <tr><td>2</td><td>2020.00.00 12:00:00</td><td>영화제목</td><td>2020.00.00 12:00:00</td><td>한남(서울)</td><td>D2, D3</td></tr>
+                                </tbody>
+                            </table>
+                            <label for="toggle_button" class="close_button">닫기 버튼</label>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="toggle_button2" class="tglTitle_button">보유한 쿠폰 내역<span class="listSum">1건</span></label>
+                        <input type="checkbox" id="toggle_button2">
+                        <div id="toggle_contents">
+                            <table class="listTable">
+                                <thead>
+                                    <tr><th>No</th><th>쿠폰명</th><th>혜택</th><th>사용기간</th><th>쿠폰정보</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="expiration"><td>2</td><td>특별할인 쿠폰</td><td>50% 할인</td><td>2020.00.00 12:00:00</td><td>기간만료</td></tr><!-- 기간만료시 tr에 class=expiration 추가-->
+                                    <tr><td>2</td><td>[이벤트]문화가 있는 날</td><td>50% 할인</td><td>2020.00.00 12:00:00</td><td>사용가능</td></tr>
+                                </tbody>
+                            </table>
+                            <label for="toggle_button2" class="close_button">닫기 버튼</label>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="toggle_button3" class="tglTitle_button">관람 내역<span class="listSum">1건</span></label>
+                        <input type="checkbox" id="toggle_button3">
+                        <div id="toggle_contents">
+                            <table class="listTable">
+                                <thead>
+                                    <tr><th>No</th><th>예매일시</th><th>프로그램명</th><th>상영시간</th><th>극 장</th><th>좌석번호</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>2</td><td>2020.00.00 12:00:00</td><td>영화제목</td><td>2020.00.00 12:00:00</td><td>한남(서울)</td><td>D2, D3</td></tr>
+                                    <tr><td>2</td><td>2020.00.00 12:00:00</td><td>영화제목</td><td>2020.00.00 12:00:00</td><td>한남(서울)</td><td>D2, D3</td></tr>
+                                </tbody>
+                            </table>
+                            <label for="toggle_button3" class="close_button">닫기 버튼</label>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="toggle_button4" class="tglTitle_button">대관 내역<span class="listSum">1건</span></label>
+                        <input type="checkbox" id="toggle_button4">
+                        <div id="toggle_contents">
+                            <table class="listTable">
+                                <thead>
+                                    <tr><th>No</th><th>대관일시</th><th>대관 형식</th><th>프로그램 명</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>2</td><td>2020.00.00 12:00:00</td><td>공간 대관</td><td><오페라의 유령> 기자 간담회</td></tr>
+                                    <tr><td>2</td><td>2020.00.00 12:00:00</td><td>공간 대관</td><td><오페라의 유령> 기자 간담회</td></tr>
+                                </tbody>
+                            </table>
+                            <label for="toggle_button4" class="close_button">닫기 버튼</label>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="toggle_button5" class="tglTitle_button">예매 취소 내역<span class="listSum">1건</span></label>
+                        <input type="checkbox" id="toggle_button5">
+                        <div id="toggle_contents">
+                            <table class="listTable">
+                                <thead>
+                                    <tr><th>No</th><th>예매일시</th><th>프로그램명</th><th>상영시간</th><th>극 장</th><th>좌석번호</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>2</td><td>2020.00.00 12:00:00</td><td>영화제목</td><td>2020.00.00 12:00:00</td><td>한남(서울)</td><td>D2, D3</td></tr>
+                                    <tr><td>2</td><td>2020.00.00 12:00:00</td><td>영화제목</td><td>2020.00.00 12:00:00</td><td>한남(서울)</td><td>D2, D3</td></tr>
+                                </tbody>
+                            </table>
+                            <label for="toggle_button5" class="close_button">닫기 버튼</label>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="toggle_button6" class="tglTitle_button">문의 내역<span class="listSum">1건</span></label>
+                        <input type="checkbox" id="toggle_button6">
+                        <div id="toggle_contents">
+                            <table class="listTable">
+                                <thead>
+                                    <tr><th>No</th><th>일시</th><th>구 분</th><th>제 목</th><th>상 태</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>2</td><td>2020.00.00 12:00:00</td><td>예매</td><td>카드결제 오류 발생하여 문의합니다</td><td>대기</td></tr>
+                                    <tr><td>2</td><td>2020.00.00 12:00:00</td><td>환불</td><td>카드결제 오류 발생하여 문의합니다</td><td>완료</td></tr>
+                                </tbody>
+                            </table>
+                            <div class="request"><a href="#" class="btnDark">문의하기</a></div>
+                            <label for="toggle_button6" class="close_button">닫기 버튼</label>
+                        </div>
+                    </li>
+                    <li>
+                        <label for="toggle_button7" class="tglTitle_button">이벤트 응모내역<span class="listSum">1건</span></label>
+                        <input type="checkbox" id="toggle_button7">
+                        <div id="toggle_contents">
+                            <table class="listTable">
+                                <thead>
+                                    <tr><th>No</th><th>이벤트 명</th><th>이벤트 기간</th><th>리워드 수령기간</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>2</td><td>오픈 기념 이벤트</td><td>2020.00.00 - 2020. 02. 02</td><td>2020.00.00 - 2020. 02. 02</td></tr>
+                                    <tr><td>2</td><td>오픈 기념 이벤트</td><td>2020.00.00 - 2020. 02. 02</td><td>2020.00.00 - 2020. 02. 02</td></tr>
+                                </tbody>
+                            </table>
+                            <label for="toggle_button7" class="close_button">닫기 버튼</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            </div>
+
+        </div>      
+    </div>
+</div>
+
+<footer>
+    <ul class="cs_area">
+        <li><a href="#"><img src="image/ic_cs_1.png" alt=""><span>고객센터</span></a></li>
+        <li><a href="#"><img src="image/ic_cs_2.png" alt=""><span>자주 묻는 질문</span></a></li>
+        <li><a href="#"><img src="image/ic_cs_3.png" alt=""><span>1:1문의</span></a></li>
+        <li><a href="#"><img src="image/ic_cs_4.png" alt=""><span>단체/대관 문의</span></a></li>
+    </ul>
+    <div class="info_area">
+        <div class="f_logo">ORFEO</div>
+        <div class="f_info">전화. 02.512.4093<span></span>주소. 서울특별시 용산구 대사관로 35 사운즈 한남 5F<span></span><br>대표자명. 장일선<span></span>개인정보보호책임자. 000<span></span>사업자등록번호. 211-81-24974<span></span>통신판매업신고번호. 제 0000호<br>ⓒ ORFEO ALL RIGHTS RESERVED</div>
+        <ul class="f_add">
+            <li><a href="#">회사소개</a><span></span></li>
+            <li><a href="#">제휴/광고/부대사업문의</a><span></span></li>
+            <li><a href="#">이용약관</a><span></span></li>
+            <li><a href="#">개인정보처리방침</a></li>
+        </ul>
+        <div class="f_sns"><a href="#">instagram</a><a href="#">P?</a></div>
+    </div>
+</footer>
+	
+<script src="js/jquery.min.js"></script>
+<script src="js/common.js"></script>	
+</body>
+
+</html>
