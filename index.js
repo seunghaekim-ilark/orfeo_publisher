@@ -15,10 +15,10 @@ htmlFiles.forEach(item => {
 
     const anchor = document.createElement('a')
     anchor.innerHTML = item
-    anchor.setAttribute('href', `./${item}`)
-    
+    anchor.setAttribute('href', `./html/${item}`)
+
     li.appendChild(anchor)
     listIndex.appendChild(li)
 })
 
-fs.writeFileSync(`${htmlDir}/index.html`, dom.serialize())
+fs.writeFileSync(`./index.html`, dom.serialize())
